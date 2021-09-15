@@ -106,19 +106,21 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 /* ==========================================================================
-   Wrap Sections
+Wrap Sections
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/IMG_1547.jpg) no-repeat center top;
+	background: url(../img/IMG_1547.jpg) no-repeat center top ;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
+	background-position: center ;
 	min-height: 650px;
   min-width: fit-content;
-
+  backdrop-filter: blur(5px);
+/* 
+    -webkit-filter: blur(3px); */
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -135,13 +137,27 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
-	font-size: 80px;
+  font-size: 80px;
 	font-weight: bold;
+  /* position:inherit; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 2;
+  /* width: 80%; */
+  
+
+  text-align: center; 
+  text-shadow: 0 0 5px black;
 }
 
 #headerwrap h4 {
-	font-weight: 400;
-	color: #ffffff
+	font-weight: bold;
+	color: white;
+  /* border: 3px solid #f1f1f1; */
+  /* position:inherit; */
+  text-align: center;
+  text-shadow: 0 0 5px black;
 }
 
 @media (max-width: 768px) {
@@ -285,6 +301,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   margin-bottom: 30px;
   color: white;
+}
+#contact a{
+  color: #16a085;
+  align-items: center;
+
 }
 
 .contact-form label {
