@@ -27,7 +27,7 @@
  */
 
  hr {
-    display: block;
+    display: flex;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
@@ -36,7 +36,7 @@
 }
 
 .centered {
-	text-align: center
+	text-align: center;
 }
 
 .mt {
@@ -110,7 +110,9 @@ Wrap Sections
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/IMG_1547.jpg) no-repeat center top ;
+	background: url(../img/IMG_1547.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
@@ -118,9 +120,9 @@ Wrap Sections
 	background-position: center ;
 	min-height: 650px;
   min-width:auto;
-  backdrop-filter: blur(5px);
-/* 
-    -webkit-filter: blur(3px); */
+  
+  
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -165,6 +167,7 @@ Wrap Sections
     padding-top: 180px;
   }
 }
+
 
 #social {
 	padding-top: 50px;
@@ -435,4 +438,17 @@ Wrap Sections
 }
 #skilllset{
   color: #1abc9c;
+}
+.iframe-container{
+position: relative;
+width: 100%;
+padding-bottom: 56.25%;
+height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
