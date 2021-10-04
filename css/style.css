@@ -111,7 +111,7 @@ Wrap Sections
 
 #headerwrap {
 	background: url(../img/IMG_1547.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 	margin-top: -70px;
 	padding-top: 250px;
@@ -119,7 +119,7 @@ Wrap Sections
 	background-attachment: relative;
 	background-position: center ;
 	min-height: 650px;
-  min-width:auto;
+  min-width: auto;
   
   
 
@@ -436,10 +436,12 @@ Wrap Sections
 .credits {
   color: #999;
 }
-#skilllset{
+#skillset{
   color: #1abc9c;
 }
 .iframe-container{
+  display: flex;
+  justify-content: center;
 position: relative;
 width: 100%;
 padding-bottom: 56.25%;
@@ -451,4 +453,33 @@ height: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.description-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.description-container p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  justify-content: center;
+}
+.resume-container{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.resume-container a{
+  font-size: 18px;
+}
+.resume-timeline-item-desc-heading{
+  display: flex;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  justify-content: center;
+  padding-top: 5%;
+}
+.list-inline li{
+  padding-top: 1%;
+  padding-bottom:2%;
 }
